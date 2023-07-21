@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap");
+
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header class="bg-[#FFFBF0]">
-      <div class="max-w-7xl mx-auto px-10 py-10">
+      <div class="max-w-7xl mx-auto pt-10 pb-36">
         <nav
           class="flex flex-col justify-between items-center gap-10 md:flex-row"
         >
@@ -22,6 +33,31 @@
             <li>Contact us</li>
           </ul>
         </nav>
+        <div
+          class="flex flex-col justify-between items-center gap-20 pt-10 md:flex-row"
+        >
+          <div>
+            <h1 class="text-6xl font-bebas text-[#363958;] leading-[70px]">
+              <span class="text-[#FABE4C]">Be the Penguins</span><br />
+              of Winter
+            </h1>
+            <p
+              class="font-roboto font-normal w-96 text-base text-[#3E3E3E] py-5"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] flex gap-4 px-6 py-4 rounded-md text-white font-roboto font-medium text-base"
+            >
+              <img class="w-6 h-6" src="./icons/shopping-cart 1.png" alt="" />
+              Buy Now
+            </button>
+          </div>
+          <div class="max-w-full px-10 md:pr-32">
+            <img src="./images/model.png" alt="" />
+          </div>
+        </div>
       </div>
     </header>
   </body>
